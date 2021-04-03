@@ -78,11 +78,16 @@ void ordenar(){
     scanf("%d",&a);
     scanf("%d",&b);
     printf("\nEl orden de los valores es %d %d",a,b);
-    if(a<b){
+    if(a!=b){
+            if(a<b){
         printf("\nEl orden de los valores de menor a mayor es %d %d\n",a,b);
+        }
+        else{
+            printf("\nEl orden de los valores de menor a mayor es %d %d\n",b,a);
+        }
     }
     else{
-         printf("\nEl orden de los valores de menor a mayor es %d %d\n",b,a);
+        printf("\n'Los valores son iguales'\n");
     }
 
 }
